@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.fixed-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('image/backdaysun.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-image 0.6s ease-in-out;
+}
+
+.dark .fixed-bg {
+    background-image: url('image/back3.jpg');
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hover-up:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.skill-progress {
+    transition: width 1.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
