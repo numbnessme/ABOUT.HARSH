@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music | Harsh Chauhan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div class="fixed-bg"></div>
+    <nav class="fixed w-full z-50 glass border-b border-slate-200 dark:border-slate-800 p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-accent font-bold flex items-center gap-2"><span>←</span> Back to Portfolio</a>
+            <div class="space-x-6 flex items-center">
+                <a href="projects.html" class="hover:text-accent font-medium">Projects</a>
+                <a href="music.html" class="hover:text-accent font-medium">Music</a>
+                <a href="travel.html" class="hover:text-accent font-medium">Travel</a>
+                <button id="theme-toggle" class="p-2 rounded-full bg-slate-200/50 dark:bg-slate-800/50 transition">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-4xl mx-auto px-4 pt-32 pb-24 space-y-16 relative z-10">
+        <section class="glass p-8 rounded-3xl text-center">
+            <h1 class="text-4xl font-bold mb-4">Music Portfolio</h1>
+            <p class="mb-6 opacity-80">Upload your music videos, showcase your work, and connect with me on Instagram!</p>
+            <form class="mb-8">
+                <label class="block mb-2 font-semibold">Upload Music Video</label>
+                <input type="file" accept="video/*" class="block mx-auto mb-4" />
+                <button type="submit" class="bg-accent text-white px-6 py-2 rounded-lg font-bold">Upload</button>
+            </form>
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold mb-2">Instagram</h2>
+                <a href="https://www.instagram.com/_harsh._.chauhan__?igsh=azk0ZWxzZDlhdzdw" target="_blank" class="text-accent underline">@_harsh._.chauhan__</a>
+            </div>
+            <div>
+                <h2 class="text-2xl font-semibold mb-6">My Videos</h2>
+                <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                    <div class="aspect-w-16 aspect-h-9 w-full max-w-md">
+                        <video controls poster="cover1.jpg" class="rounded-lg shadow-lg w-full h-full object-cover">
+                            <source src="image/music1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="aspect-w-16 aspect-h-9 w-full max-w-md">
+                        <video controls poster="cover2.jpg" class="rounded-lg shadow-lg w-full h-full object-cover">
+                            <source src="image/music3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
